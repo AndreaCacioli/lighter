@@ -1,1 +1,6 @@
-console.log("This is a serverless function!");
+console.log("Got a Request!");
+
+// exports.handler = (event, context, callback) => {
+
+// }
+
