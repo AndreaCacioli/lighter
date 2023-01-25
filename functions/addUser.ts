@@ -1,6 +1,11 @@
-console.log("Got a Request!");
+import { Handler } from "@netlify/functions"
 
-// exports.handler = (event, context, callback) => {
+const handler: Handler = async (event, context) => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "hello world" })
+  }
+}
 
-// }
+export { handler };
 
