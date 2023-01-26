@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "jest",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng serve -o"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install"
   },
   "engines": {
     "node": ">=6.11.1",
