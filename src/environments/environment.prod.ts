@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api_path: "http://lighter.netlify.app/.netlify/functions/",
+  api_path: "https://lighterteams.netlify.app/.netlify/functions/",
 };
