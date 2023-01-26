@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Svg, Interpolation, Line, Bar } from "chartist"
+import { environment } from 'environments/environment';
 
 @Component({
   selector: 'app-dashboard',
@@ -67,6 +68,9 @@ export class DashboardComponent implements OnInit {
   };
   ngOnInit() {
     /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
+
+    const stage: String = environment.production ? "production" : "local development";
+    console.log(`Running in ${stage} mode`);
 
     const dataDailySalesChart: any = {
       labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
