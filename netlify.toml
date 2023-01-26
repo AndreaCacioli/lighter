@@ -1,6 +1,7 @@
 [build]
   command = "ng build"
   functions = "functions"
+  publish = "dist/"
 
 [[redirects]]
   from = "/api/*"
